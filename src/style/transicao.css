@@ -1,0 +1,27 @@
+@keyframes piscar {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .piscar {
+    animation: piscar 3s;
+  }
+
+
+  .sumir{
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+
+  .aparecer{
+    opacity: 1;
+    transition: 0.5s;
+  }

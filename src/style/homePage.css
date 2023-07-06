@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+    font-family: 'Comic Sans MS' ,Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: rgba(88, 81, 79, 0.808);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-pai{
+    width: 800px;
+    height: 540px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+#container-imagem{
+    width: 300px;
+    height: 100%;
+    border-radius: 20px;
+    border: black solid 10px;
+    background-image: url('../../public/img/interrogação2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+#container-texto{
+    width: 58%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+h1{
+    font-size: 23px;
+}
+
+h2{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+#container-texto ul{
+    margin-top: 20px;
+    list-style-position: inside;
+}
+
+
+#container-texto li{
+    margin-bottom: 10px;
+}
+
+
+#container-texto p{
+    font-size: 13px;
+}
+
+
+#container-texto button{
+    background-color: rgb(112, 238, 28);
+    font-weight: bold;
+    border: black solid 3px;
+    margin-top: 18px;
+    padding: 6px 12px;
+
+    transition: 0.3s;
+}
+
+
+#container-texto button:hover{
+    background-color: rgb(54, 36, 134);
+    color: rgb(112, 238, 28);
+}
+
+
+
+@media screen and (max-width: 820px){
+
+    body{
+        height: 250vh;
+    }
+
+
+    .container-pai{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;      
+    }
+
+
+    #container-texto{
+        width: 90%;
+    }
+
+
+    #container-imagem{
+        width: 90%;
+        height: 200px;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 275px){
+    h1{
+        font-size: 19px;
+    }
+}
